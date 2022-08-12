@@ -1,0 +1,93 @@
+<head>
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+  />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+  <link rel="stylesheet" href="style.css" />
+
+  <script src="./Component/Navbar.js"></script>
+  <script src="./Component/Sidebar.js"></script>
+  <script src="./Component/Dropdown.js"></script>
+  <script src="./Component/ServicesCard.js"></script>
+  <script src="./Component/Button.js"></script>
+  <script src="./Component/ProductsCard.js"></script>
+
+  <script src="./Sections/Intro.js"></script>
+  <script src="./Sections/Services.js"></script>
+  <script src="./Sections/Products.js"></script>
+  <script src="./Sections/Team.js"></script>
+  <script src="./Sections/Footer.js"></script>
+
+  <script src="./Functions/Sidebar.js"></script>
+  <script src="./Functions/Carousel.js"></script>
+
+  <link rel="stylesheet" href="./font-awesome/css/font-awesome.min.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+
+<body>
+  <div>
+    <navbar-component></navbar-component>
+    <sidebar-component></sidebar-component>
+    <intro-section></intro-section>
+    <div class="section-space"></div>
+    <services-section></services-section>
+    <div class="all-swiper">
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <services-card
+              img="./Assets/Images/Services/alt_route_black_24dp.svg"
+              title="titulo"
+              text="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            ></services-card>
+          </div>
+          <div class="swiper-slide">
+            <services-card
+              img="./Assets/Images/Services/headset_mic_black_24dp.svg"
+              title="titulo"
+              text="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            ></services-card>
+          </div>
+          <div class="swiper-slide">
+            <services-card
+              img="./Assets/Images/Services/inventory_black_24dp.svg"
+              title="titulo"
+              text="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            ></services-card>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"><p><</p></div>
+        <div class="swiper-button-next"><p>></p></div>
+        <div class="swiper-scrollbar"></div>
+      </div>
+      <div class="center-button">
+        <button-component text="VER SERVICOS" color="blue"></button-component>
+      </div>
+    </div>
+    <div class="section-space"></div>
+    <products-section></products-section>
+    <div class="section-space"></div>
+    <team-section></team-section>
+    <div class="section-space"></div>
+    <footer-section></footer-section>
+  </div>
+  <script>
+    const swiper = new Swiper('.swiper', {
+      loop: true,
+      pagination: {
+        el: '.swiper-pagination',
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      scrollbar: {
+        el: '.swiper-scrollbar',
+      },
+    });
+  </script>
+</body>
