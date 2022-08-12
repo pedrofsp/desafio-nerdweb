@@ -524,7 +524,6 @@ $navHeight: 70px;
     background-size: cover;
     background-position: right;
     border-bottom: 4px solid $lightBlue;
-    background-color: lightcoral;
 
     button,
     h4,
@@ -614,7 +613,11 @@ $navHeight: 70px;
         .icons {
           margin-top: 5px;
           i {
+            cursor: pointer;
             margin-right: 10px;
+            &:hover {
+              color: #ade9ff;
+            }
           }
         }
       }
@@ -734,6 +737,7 @@ $navHeight: 70px;
   .all-swiper {
     display: block;
     .swiper {
+      padding: 40px 0;
       width: 80%;
       height: 250px;
       .swiper-slide {

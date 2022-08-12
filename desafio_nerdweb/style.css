@@ -512,7 +512,6 @@
   background-size: cover;
   background-position: right;
   border-bottom: 4px solid #00aeef;
-  background-color: lightcoral;
 }
 .all-team .content button,
 .all-team .content h4,
@@ -605,7 +604,11 @@
   margin-top: 5px;
 }
 .all-footer .content .bottom-flex .media .icons i {
+  cursor: pointer;
   margin-right: 10px;
+}
+.all-footer .content .bottom-flex .media .icons i:hover {
+  color: #ade9ff;
 }
 
 /*tablet*/
@@ -721,6 +724,7 @@
     display: block;
   }
   .all-swiper .swiper {
+    padding: 40px 0;
     width: 80%;
     height: 250px;
   }
