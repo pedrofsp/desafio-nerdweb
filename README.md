@@ -16,6 +16,6 @@ Project developed using exclusively HTML CSS(SASS) and Javascript.
 
 #### To run the project locally you need to:
 
--Open index.html fixer in any browser
+-Open index.html in any browser
 
 Code by Pedro Henrique Falleiros Sampaio Presotto
